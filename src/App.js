@@ -128,7 +128,7 @@ function App() {
 
 			{
 				boards.map( board => {
-					<Board boards={boards} board={board} currentBoard={currentBoard} setCurrentBoard={setCurrentBoard} currentItem={currentItem} setCurrentItem={setCurrentItem} />
+					return <Board boards={boards} board={board} currentBoard={currentBoard} setCurrentBoard={setCurrentBoard} currentItem={currentItem} setCurrentItem={setCurrentItem} setBoards={setBoards} />
 				})
 			}
 		</div>

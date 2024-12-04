@@ -1,7 +1,8 @@
 import React from 'react'
 import { Item } from '../Items'
 
-export const Board = ({ board, boards, setCurrentItem, currentItem, setCurrentBoard, currentBoard} ) => {
+export const Board = ({ board, boards, setCurrentItem, currentItem, setCurrentBoard, currentBoard, setBoards} ) => {
+
     return (
       	<div className='board'>
 			<div className="board__title">{board.title}</div>
@@ -11,6 +12,7 @@ export const Board = ({ board, boards, setCurrentItem, currentItem, setCurrentBo
 						item={item} 
 						board={board} 
 						boards={boards} 
+						setBoards={setBoards}
 						setCurrentItem={setCurrentItem} 
 						currentItem={currentItem} 
 						setCurrentBoard={setCurrentBoard} 
